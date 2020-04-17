@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tasks</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style type="text/css">
+	th,
+	tr {
+		width: 25%;
+		text-align: center;
+	}
+	.val1, .val2{
+		width: 20%;
+	}
+</style>
+
+<body>
+	<div class="input-group mb-3">
+		<input type="number" id="val1" placeholder="Min.Complexity">
+		<input type="number" id="val2" placeholder="Max.Complexity">
+		<div class="input-group-append">
+			<button type="button" onclick="Search()">Search</button>
+		</div>
+	</div>
+	<table class="table table-striped">
+		<tbody>
+			<tr>
+				<th scope="col" onclick="namesort('name')">Name</th>
+				<th scope="col" onclick="namesort('year')">Year</th>
+				<th scope="col" onclick="namesort('day')">Day</th>
+				<th scope="col" onclick="namesort('comp')">Complexity</th>
+			</tr>
+		</tbody>
+	</table>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
